@@ -2,143 +2,147 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
   <title>Мишка</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <div class="page-header__container">
+    <div class="container page-header__container">
       <nav class="nav page-header__nav">
-        <div class="nav__menu">
-          <a href="" class="nav__logo header-logo">
-            <img src="" alt="" class="header-logo__self">
+        <div class="nav__main">
+          <a href="" class="nav__logo">
+            <img src="img/logo-mobile.svg" alt="" class="nav__logo-self" width="86" height="35">
           </a>
           <button class="burger nav__burger"></button>
         </div>
-        <ul class="nav__list nav-list">
-          <li class="nav-list__item">
-            <a href="" class="nav-list__link">Каталог товаров</a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="" class="nav__link">Каталог товаров</a>
           </li>
-          <li class="nav-list__item">
-            <a href="" class="nav-list__link">Вязание на заказ</a>
+          <li class="nav__item">
+            <a href="" class="nav__link">Вязание на заказ</a>
           </li>
-          <li class="nav-list__item">
-            <a href="" class="nav-list__link">Поиск по сайту</a>
+          <li class="nav__item">
+            <a href="" class="nav__link">Поиск по сайту</a>
           </li>
-          <li class="nav-list__item">
-            <a href="" class="nav-list__link">Корзина: пока пуста</a>
+          <li class="nav__item">
+            <a href="" class="nav__link">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
     </div>
-  </header>
-  <main>
     <section class="intro">
-      <div class="intro__container">
-        <div class="intro__title page-title page-title--index">
+      <div class="container intro__container">
+        <div class="page-title page-title--index intro__title">
           <h1 class="page-title__title">
-            Милые штуки ручной работы для дома
+            Милые штуки ручной работы&nbsp;для дома
           </h1>
         </div>
-        <div class="intro__features">
-          <div class="intro__features-item">
-            <p class="intro__features-name">
+        <div class="intro__products">
+          <div class="intro__product intro__product--decor">
+            <p class="intro__product-name">
               Предметы интерьера
             </p>
           </div>
-          <div class="intro__features-item">
-            <p class="intro__features-name">
+          <div class="intro__product intro__product--toys">
+            <p class="intro__product-name">
               Детские игрушки
             </p>
           </div>
         </div>
       </div>
     </section>
+  </header>
+  <main>
     <section class="weekly-item">
-      <div class="weekly-item__container">
-        <div class="weekly-item__heading">
-          <h2 class="weekly-item__category-name">Вязаные корзинки</h2>
-          <h3 class="weekly-item__item-name">Товар недели</h3>
-        </div>
+      <div class="container weekly-item__container">
+        <header class="weekly-item__header">
+          <h2 class="title weekly-item__title">Вязаные корзинки</h2>
+          <p class="weekly-item__subtitle">Товар недели</p>
+        </header>
         <p class="weekly-item__description">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
         <table class="weekly-item__table item-table">
           <tr>
             <td>
-              <div class="item-table__data-container">
+              <div class="item-table__data item-table__data--name">
                 <span class="item-table__value-name">Цвет:</span>
               </div>
             </td>
             <td>
-              <div class="item-table__data-container">
+              <div class="item-table__data item-table__data--value">
                 <span class="item-table__value">«Тиффани»/серый</span>
               </div>
             </td>
           </tr>
           <tr>
             <td>
-              <div class="item-table__data-container">
-                <span class="item-table__value-name">Диаметр</span>
+              <div class="item-table__data item-table__data--name">
+                <span class="item-table__value-name">Диаметр:</span>
               </div>
             </td>
             <td>
-              <div class="item-table__data-container">
+              <div class="item-table__data item-table__data--value">
                 <span class="item-table__value">25 см</span>
               </div>
             </td>
           </tr>
           <tr>
             <td>
-              <div class="item-table__data-container">
-                <span class="item-table__value-name">Высота</span>
+              <div class="item-table__data item-table__data--name">
+                <span class="item-table__value-name">Высота:</span>
               </div>
             </td>
             <td>
-              <div class="item-table__data-container">
+              <div class="item-table__data item-table__data--value">
                 <span class="item-table__value">15 см</span>
               </div>
             </td>
           </tr>
         </table>
-        <div class="weekly-item__img">
-          <img src="" alt="" class="weekly-item__img-self">
+        <div class="weekly-item__img-wrapper">
+          <img src="img/triple-set-mobile@1x.jpg" alt="" class="weekly-item__img" width="260" height="315">
         </div>
-        <b class="weekly-item__item-price">Цена: 990 руб.</b>
-        <button class="weekly-item__btn">Заказать</button>
+        <p class="weekly-item__item-price">Цена: 990 руб.</p>
+        <button class="btn weekly-item__btn">Заказать</button>
       </div>
     </section>
     <section class="about">
-      <div class="about__container">
-        <h2 class="about__title">Коротко о нас:</h2>
+      <div class="container about__container">
+        <header class="about__header">
+          <h2 class="title about__title">Коротко о нас:</h2>
+        </header>
         <ul class="about__features features">
-          <li class="features__item">
+          <li class="features__item features__item--flower">
             <p class="features__description">
               Экологически
               чистые материалы
             </p>
           </li>
-          <li class="features__item">
+          <li class="features__item features__item--money">
             <p class="features__description">
               Скандинавский стиль
               по российской цене
             </p>
           </li>
-          <li class="features__item">
+          <li class="features__item features__item--heart">
             <p class="features__description">Увеличивает лайки
               на фотографиях</p>
           </li>
-          <li class="features__item">
+          <li class="features__item features__item--ball">
             <p class="features__description">Связано вручную с
               любовью и умилением</p>
           </li>
-          <li class="features__item">
+          <li class="features__item features__item--rocket">
             <p class="features__description">
               Поддержка отечественного производителя
             </p>
           </li>
-          <li class="features__item">
+          <li class="features__item features__item--gift">
             <p class="features__description">
               Поставляется в
               подарочной упаковке
@@ -148,8 +152,10 @@
       </div>
     </section>
     <section class="reviews">
-      <div class="reviews__container">
-        <h2 class="reviews__title">Отзывы</h2>
+      <div class="container reviews__container">
+        <header class="reviews__header">
+          <h2 class="title reviews__title">Отзывы</h2>
+        </header>
         <article class="comment review__comment">
           <blockquote class="comment__text">
             Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
@@ -160,52 +166,59 @@
           </footer>
         </article>
         <div class="reviews__control-btns">
-          <button class="reviews__btn-prev"></button>
-          <button class="reviews__btn-next"></button>
+          <button class="reviews__btn reviews__btn--prev">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+              <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
+            </svg>
+          </button>
+          <button class="reviews__btn reviews__btn--next">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+              <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
+            </svg>
+          </button>
         </div>
-        <button class="reviews__btn-write">Написать</button>
+        <button class="btn reviews__btn-write">Написать</button>
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__container">
-        <h2 class="contacts__title">Контакты</h2>
+      <div class="container contacts__container">
+        <header class="contacts__header">
+          <h2 class="title contacts__title">Контакты</h2>
+        </header>
         <address class="contacts__address">
-          <p class="contacts__item">
+          <p class="contacts__item contacts__item--email">
             <span class="contacts__item-name">e-mail:</span>
             <a class="contacts__item-address" href="">info@mimimishkashop.ru</a>
           </p>
-          <p class="contacts__item">
+          <p class="contacts__item contacts__item--address">
             <span class="contacts__item-name">адрес:</span>
-            <span class="contacts__item-address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+            <span class="contacts__item-address">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д. 19/8, офис 101</span>
           </p>
         </address>
       </div>
       <div class="map">
-        <img class="map__img" src="" alt="">
+        <img class="map__img" src="img/map-mobile@1x.jpg" alt="" width="322" height="457">
         <div class="map__marker"></div>
       </div>
-      <div class="contacts__container">
-        <button class="contacts__feedback-btn">Напишите нам</button>
+      <div class="container contacts__container">
+        <button class="btn contacts__feedback-btn">Напишите нам</button>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__container">
-      <ul class="social-links">
-        <li>
-          <a href="" class="social__link" aria-label="Инстаграм"></a>
-        </li>
-        <li>
-          <a href="" class="social__link" aria-label="Фейсбук"></a>
-        </li>
-        <li>
-          <a href="" class="social__link" aria-label="Твиттер"></a>
-        </li>
-      </ul>
+    <div class="container page-footer__container">
+      <div class="social">
+          <a href="" class="social__link social__link--insta" aria-label="Инстаграм"></a>
+          <a href="" class="social__link social__link--fb" aria-label="Фейсбук"></a>
+          <a href="" class="social__link social__link--twitter" aria-label="Твиттер"></a>
+      </div>
       <div class="copyright">
         <span class="copyright__text">Разработано:</span>
         <a href="" class="copyright__link">
-          <svg></svg>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+          </svg>
+
         </a>
       </div>
     </div>

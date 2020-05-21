@@ -5,6 +5,11 @@
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
+    "grunt": "^1.1.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-postcss": "^0.9.0",
     "stylelint": "10.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
