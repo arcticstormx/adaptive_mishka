@@ -66,6 +66,7 @@
 @media @tablet {
   .nav {
     position: relative;
+    border-bottom: 1px solid #ececec;
     &__main {
       justify-content: flex-start;
     }
@@ -89,6 +90,7 @@
       flex-direction: row;
     }
     &__item {
+      display: flex;
       box-shadow: none;
     }
     &__item--catalog {
@@ -101,11 +103,35 @@
       z-index: 10;
       position: absolute;
       top: 113px;
-      left: 150px;
+      left: 218px;
     }
-    &__item--catalog .nav__link,
-    &__item--form .nav__link {
+    &__link--catalog,
+    &__link--form {
+      font-size: 15px;
+    }
+    &__item--search span {
+      display: none;
+    }
+    &__link {
       padding-left: 0;
+
+      height: auto;
+      box-shadow: none;
+    }
+    &__link::before {
+      top: 36px;
+    }
+    &__link--search {
+      width: 84px;
+      height: 88px;
+      border-left: 1px solid #ececec;
+      border-right: 1px solid #ececec;
+    }
+    &__link--cart {
+      padding-left: 80px;
+    }
+    &__link--cart::before {
+      top: 35px;
     }
 
   }
