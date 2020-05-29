@@ -1,0 +1,33 @@
+.burger {
+  cursor: pointer;
+  &__body {
+    width: 20px;
+    height: 14px;
+  }
+  &__inner {
+    position: relative;
+    height: 2px;
+    width: 20px;
+    background-color: #000;
+  }
+  &__inner::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+
+    height: 2px;
+    width: 20px;
+    background-color: #000;
+  }
+  &__inner::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 0;
+
+    height: 2px;
+    width: 20px;
+    background-color: #000;
+  }
+}

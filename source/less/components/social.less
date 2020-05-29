@@ -1,0 +1,41 @@
+.social {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 28px;
+  width: 141px;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - 130px);
+
+    width: 260px;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+  &__link {
+    display: flex;
+  }
+  &__link--insta {
+    width: 22px;
+    height: 21px;
+    background: url("../img/icon-insta.svg") 0 0 no-repeat;
+    background-size: auto 21px;
+  }
+  &__link--fb {
+    width: 15px;
+    height: 28px;
+    background: url("../img/icon-fb.svg") 0 0 no-repeat;
+    background-size: auto 28px;
+  }
+  &__link--twitter {
+    width: 23px;
+    height: 20px;
+    background: url("../img/icon-twitter.svg") 0 0 no-repeat;
+    background-size: auto 20px;
+  }
+}

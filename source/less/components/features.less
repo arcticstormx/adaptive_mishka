@@ -1,0 +1,59 @@
+.features {
+  &__item {
+    position: relative;
+    margin-bottom: 32px;
+    padding-top: 73px;
+  }
+  &__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+  }
+  &__item--flower::before {
+    width: 32px;
+    height: 37px;
+    background: url("../img/icon-feature-flower.svg") 0 0 no-repeat;
+    background-size: 32px 37px;
+  }
+  &__item--money::before {
+    width: 47px;
+    height: 27px;
+    background: url("../img/icon-feature-money.svg") 0 0 no-repeat;
+    background-size: 47px 27px;
+  }
+  &__item--heart::before {
+    width: 34px;
+    height: 27px;;
+    background: url("../img/icon-feature-heart.svg") 0 0 no-repeat;
+    background-size: 34px 27px;
+  }
+  &__item--ball::before {
+    width: 35px;
+    height: 34px;
+    background: url("../img/icon-feature-ball.svg") 0 0 no-repeat;
+    background-size: 35px 34px;
+  }
+  &__item--rocket::before {
+    width: 55px;
+    height: 23px;
+    background: url("../img/icon-feature-rocket.svg") 0 0 no-repeat;
+    background-size: 55px 23px;
+  }
+  &__item--gift::before {
+    width: 33px;
+    height: 32px;
+    background: url("../img/icon-feature-gift.svg") 0 0 no-repeat;
+    background-size: 33px 32px;
+  }
+
+
+  &__description {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+
+    margin: 0;
+
+    color: #000;
+  }
+}

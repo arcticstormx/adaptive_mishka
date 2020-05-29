@@ -1,9 +1,22 @@
-.page-header__nav {
-  display: flex;
+.page-header {
+  &__container {
+    padding-left: 0;
+  padding-right: 0;
+  }
+  &__nav {
+    display: flex;
   flex-direction: column;
+  }
 }
 
-.page-header__container {
-  padding-left: 0;
-  padding-right: 0;
+@media @tablet {
+  .page-header {
+    &__container {
+    }
+    &__nav {
+      padding-left: 50px;
+      padding-right: 50px;
+      flex-direction: row;
+    }
+  }
 }
