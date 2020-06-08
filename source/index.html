@@ -26,16 +26,24 @@
         </div>
         <ul class="nav__list">
           <li class="nav__item nav__item--catalog" >
-            <a href="catalog.html" class="nav__link nav__link--catalog"><span>Каталог товаров</span></a>
+            <a href="catalog.html" class="nav__link nav__link--catalog">
+              <span>Каталог товаров</span>
+            </a>
           </li>
           <li class="nav__item nav__item--form" >
-            <a href="form.html" class="nav__link nav__link--form"><span>Вязание на заказ</span></a>
+            <a href="form.html" class="nav__link nav__link--form">
+              <span>Вязание на заказ</span>
+            </a>
           </li>
           <li class="nav__item nav__item--search">
-            <a href="index.html" class="nav__link nav__link--search"><span>Поиск по сайту</span></a>
+            <a href="index.html" class="nav__link nav__link--search">
+              <span>Поиск по сайту</span>
+            </a>
           </li>
           <li class="nav__item nav__item--cart" >
-            <a href="" class="nav__link nav__link--cart"><span>Корзина: пока пуста</span></a>
+            <a href="" class="nav__link nav__link--cart">
+              <span>Корзина: пока пуста</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -44,6 +52,7 @@
   <main>
     <section class="intro">
       <div class="container intro__container">
+        <span class="intro__small">Бесплатная доставка по России</span>
         <div class="page-title page-title--index intro__title">
           <h1 class="page-title__title">
             Милые штуки ручной работы&nbsp;для дома
@@ -69,52 +78,58 @@
           <h2 class="title weekly-item__title">Вязаные корзинки</h2>
           <p class="weekly-item__subtitle">Товар недели</p>
         </header>
-        <p class="weekly-item__description">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-        </p>
-        <table class="weekly-item__table item-table">
-          <tr>
-            <td>
-              <div class="item-table__data item-table__data--name">
-                <span class="item-table__value-name">Цвет:</span>
-              </div>
-            </td>
-            <td>
-              <div class="item-table__data item-table__data--value">
-                <span class="item-table__value">«Тиффани»/серый</span>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="item-table__data item-table__data--name">
-                <span class="item-table__value-name">Диаметр:</span>
-              </div>
-            </td>
-            <td>
-              <div class="item-table__data item-table__data--value">
-                <span class="item-table__value">25 см</span>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="item-table__data item-table__data--name">
-                <span class="item-table__value-name">Высота:</span>
-              </div>
-            </td>
-            <td>
-              <div class="item-table__data item-table__data--value">
-                <span class="item-table__value">15 см</span>
-              </div>
-            </td>
-          </tr>
-        </table>
-        <div class="weekly-item__img-wrapper">
-          <img src="img/triple-set-mobile@1x.jpg" alt="" class="weekly-item__img" width="260" height="315">
+        <div class="weekly-item__body">
+          <p class="weekly-item__description">
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+          </p>
+          <table class="weekly-item__table item-table">
+            <tr>
+              <td>
+                <div class="item-table__data item-table__data--name">
+                  <span class="item-table__value-name">Цвет:</span>
+                </div>
+              </td>
+              <td>
+                <div class="item-table__data item-table__data--value">
+                  <span class="item-table__value">«Тиффани»/серый</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="item-table__data item-table__data--name">
+                  <span class="item-table__value-name">Диаметр:</span>
+                </div>
+              </td>
+              <td>
+                <div class="item-table__data item-table__data--value">
+                  <span class="item-table__value">25 см</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="item-table__data item-table__data--name">
+                  <span class="item-table__value-name">Высота:</span>
+                </div>
+              </td>
+              <td>
+                <div class="item-table__data item-table__data--value">
+                  <span class="item-table__value">15 см</span>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <div class="weekly-item__img-wrapper">
+            <picture>
+              <source media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@1x.jpg 2x">
+              <img src="img/triple-set-mobile@1x.jpg" alt="" srcset="img/triple-set-mobile@2x.jpg 2x" class="weekly-item__img">
+            </picture>
+          </div>
+          <p class="weekly-item__item-price">Цена: 990 руб.</p>
+          <button class="btn weekly-item__btn">Заказать</button>
         </div>
-        <p class="weekly-item__item-price">Цена: 990 руб.</p>
-        <button class="btn weekly-item__btn">Заказать</button>
       </div>
     </section>
     <section class="about">
@@ -136,12 +151,16 @@
             </p>
           </li>
           <li class="features__item features__item--heart">
-            <p class="features__description">Увеличивает лайки
-              на фотографиях</p>
+            <p class="features__description">
+              Увеличивает лайки
+              на фотографиях
+            </p>
           </li>
           <li class="features__item features__item--ball">
-            <p class="features__description">Связано вручную с
-              любовью и умилением</p>
+            <p class="features__description">
+              Связано вручную с
+              любовью и умилением
+            </p>
           </li>
           <li class="features__item features__item--rocket">
             <p class="features__description">

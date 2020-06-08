@@ -46,7 +46,6 @@
     background-size: 33px 32px;
   }
 
-
   &__description {
     font-size: 17px;
     font-weight: 700;
@@ -55,5 +54,23 @@
     margin: 0;
 
     color: #000;
+  }
+}
+
+@media @tablet {
+  .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    flex: 1 1 auto;
+    align-items: stretch;
+    flex-wrap: wrap;
+    height: 410px;
+
+    &__item {
+      width: 303px;
+      margin-bottom: 0;
+      padding-top: 53px;
+    }
   }
 }

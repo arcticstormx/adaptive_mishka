@@ -62,3 +62,55 @@
     width: 260px;
   }
 }
+@media @tablet {
+  .weekly-item {
+    background-size: auto 17px;
+
+    &__container {
+      position: relative;
+    }
+    &__header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 55px;
+    }
+    &__subtitle {
+      line-height: 17px;
+      width: 70px;
+      text-align: center;
+      align-self: center;
+    }
+    &__body {
+      display: flex;
+      flex-direction: column;
+      max-width: 333px;
+      min-height: 404px;
+      padding-right: 42px;
+    }
+    &__description {
+      margin-bottom: 54px;
+      font-size: 17px;
+      line-height: 30px;
+    }
+    &__table {
+      margin-bottom: 59px;
+    }
+    &__img-wrapper {
+      position: absolute;
+      top: 145px;
+      right: 50px;
+    }
+    &__img {
+      width: 333px;
+      height: 404px;
+      vertical-align: top;
+    }
+    &__item-price {
+      font-size: 20px;
+    }
+    &__btn {
+      width: 292px;
+    }
+  }
+}
